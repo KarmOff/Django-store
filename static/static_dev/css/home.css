@@ -1,0 +1,64 @@
+.section-top {
+    width: 100%;
+}
+.section-top img {
+    width: 100%;
+}
+section {
+    margin-top: 70px;
+}
+section .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card {
+    padding-top: 30px;
+}
+.sale {
+    position: absolute;
+    top: 15%;
+    background: limegreen;
+    padding: 0 25px;
+    color: #fff;
+    font-weight: 500;
+}
+.navbar-top {
+    height:20px;
+    background-color: yellowgreen;
+}
+.basket-container {
+    position: relative;
+    width: 400px;
+}
+.basket-items {
+    position: absolute;
+    top:40px;
+    background-color: lightgray;
+    width: 100%;
+    display: none;
+    padding:20px 10px;
+}
+.basket-container:hover .basket-items {
+    display: block;
+}
+.basket-items__list {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+.delete_item {
+    background-color: darkred;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+.tovar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tovar p {
+    margin: 0;
+    margin-right: 20px;
+}

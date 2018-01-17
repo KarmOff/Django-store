@@ -1,0 +1,16 @@
+<div class="col-12 col-xl-3">
+    <div class="card" style="width: 18rem;">
+        <a href="{% url 'product' product_images.product.id %}">
+            <img class="card-img-top" src="{{ product_images.image.url }}" alt="Card image cap">
+        </a>
+        {% if product_images.product.discount %}
+            <div class="sale">{{ product_images.product.discount }} %</div>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title">{{ product_images.product.name|truncatechars_html:20 }}</h5>
+            <p class="card-text">{{ product_images.product.description|truncatechars_html:128 }}</p>
+            <p>{{ product_images.product.price }} ₽</p>
+            <a href="#" class="btn btn-primary">Добавить в корзину</a>
+        </div>
+    </div>
+</div>
